@@ -1,0 +1,10 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Sprint 15 TestSuite">
+	<test name="Add Functionality Test">
+		<classes>
+
+			<class name="com.noorteck.testng.xaddition.Add"></class>
+
+		</classes>
+	</test>
+</suite>
