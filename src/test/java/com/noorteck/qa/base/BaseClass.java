@@ -12,7 +12,7 @@ import com.noorteck.qa.utils.CommonUI;
 import com.noorteck.qa.utils.ReadPropertyData;
 
 public class BaseClass extends CommonUI {
-//abcabc test
+//abcabc test test
 //	@BeforeMethod TODO use @BeforeMethod annotation if your project using TestNG not Cucumber
 	public void setUp() {
 
