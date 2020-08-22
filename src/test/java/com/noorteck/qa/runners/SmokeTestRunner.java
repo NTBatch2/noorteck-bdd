@@ -7,7 +7,7 @@ import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
 
 @RunWith(Cucumber.class)
-
+//surefire:test -Dtest=com\noorteck\qa\runners\SmokeTestRunner -DfailIfNoTests=false
 @CucumberOptions(
 		features = "src/test/resources/ntk360/SmokeTest.feature", 
 		glue = {"com.noorteck.qa.steps"},
