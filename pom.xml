@@ -33,9 +33,9 @@
 						<suiteXmlFile>${suiteFile}</suiteXmlFile>
 					</suiteXmlFiles>
 
-				<systemPropertyVariables>
-					<reportedSuite>${xmlFilePath}</reportedSuite>
-				</systemPropertyVariables>
+					<systemPropertyVariables>
+						<reportedSuite>${xmlFilePath}</reportedSuite>
+					</systemPropertyVariables>
 				</configuration>
 			</plugin>
 		</plugins>
