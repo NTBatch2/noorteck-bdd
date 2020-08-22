@@ -3,7 +3,7 @@ Feature: User Page Feature
   Background: 
     Given User is logged in and in NTK Dashboard page
 
-  @smoke
+  @smoke @Regression
   Scenario Outline: Verify employee username
     When User navigates to Users page
     Then User verifies employee data "<EmployeeName>","<Username>"
@@ -17,7 +17,7 @@ Feature: User Page Feature
   #| Cecil Bonaparte | Cecil.bonaparte |
   #| David Cole      | David.cole      |
   
-  @smoke
+  
   Scenario: Verify pending timesheet icon is displayed
     When User enters valid credentials
      And User clicks login button
@@ -30,6 +30,7 @@ Feature: User Page Feature
     Then User is on dashboard page
      And System displays the pending leave request icon
 
+	@Regression
   Scenario: Verify Scheduled Recruitment Event icon is displayed
     When User enters valid credentials
      And User clicks login button

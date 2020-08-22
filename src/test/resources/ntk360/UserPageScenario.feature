@@ -2,7 +2,7 @@ Feature: User Page Feature
 
   Background: 
     Given User is logged in and in NTK Dashboard page
-@smoke
+
   Scenario Outline: Verify employee username
     When User navigates to Users page
     Then User verifies employee data "<EmployeeName>","<Username>"

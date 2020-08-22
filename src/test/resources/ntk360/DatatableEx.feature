@@ -3,7 +3,7 @@ Feature: Job Titles feature
   Background: 
     Given User is logged in and in NTK Dashboard page
 
-  @smoke
+  
   Scenario: Adding new job to job tables
     When User navigates to Job Titles
      And User clicks on the Add icon

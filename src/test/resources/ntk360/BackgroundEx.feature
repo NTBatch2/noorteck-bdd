@@ -3,6 +3,7 @@ Feature: job Title Feature
   Background: 
     Given User is logged in and in NTK Dashboard page
 
+
   Scenario Outline: Edit existing job title and description
     When User navigates to Job Titles
      And User clicks on the Edit icon

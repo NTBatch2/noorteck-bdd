@@ -1,0 +1,8 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Regression Suite">
+	<test name="Regression Functionality">
+		<classes>
+			<class name="com.noorteck.qa.runners.RegressionRunner"></class>
+		</classes>
+	</test>
+</suite>
