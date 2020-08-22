@@ -1,5 +1,5 @@
 package com.noorteck.qa.runners;
-
+/*
 import org.junit.runner.RunWith;
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
@@ -14,7 +14,7 @@ import io.cucumber.junit.CucumberOptions;
 					"json:target/cucumber.json"}, 
 		monochrome = true
 		
-		)
+		)*/
 
 
 

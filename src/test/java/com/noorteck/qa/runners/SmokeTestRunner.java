@@ -1,13 +1,13 @@
 package com.noorteck.qa.runners;
 
 
-import org.junit.runner.RunWith;
+ import org.testng.annotations.Test;
 
-import io.cucumber.junit.Cucumber;
-import io.cucumber.junit.CucumberOptions;
+ 
+import io.cucumber.testng.AbstractTestNGCucumberTests;
+import io.cucumber.testng.CucumberOptions;
 
-@RunWith(Cucumber.class)
-//surefire:test -Dtest=com\noorteck\qa\runners\SmokeTestRunner -DfailIfNoTests=false
+
 @CucumberOptions(
 		features = "src/test/resources/ntk360/SmokeTest.feature", 
 		glue = {"com.noorteck.qa.steps"},
@@ -19,5 +19,6 @@ import io.cucumber.junit.CucumberOptions;
 		
 		)
 
-public class SmokeTestRunner {
+ 
+public class SmokeTestRunner extends AbstractTestNGCucumberTests{
 }
