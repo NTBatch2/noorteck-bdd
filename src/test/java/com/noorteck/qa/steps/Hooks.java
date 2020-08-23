@@ -1,7 +1,11 @@
 package com.noorteck.qa.steps;
 
+import java.util.List;
+import java.util.Map;
+
 import com.noorteck.qa.base.BaseClass;
 
+import io.cucumber.datatable.DataTable;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
@@ -27,6 +31,23 @@ public class Hooks extends BaseClass {
 	public void login() {
 		loginObj.login();
 
+	}
+
+	@Given("User provides environment data")
+	public void setEnvData(DataTable dataTable) {
+
+		// Convert data table to List Map
+		List<Map<String, String>> listMap = dataTable.asMaps(String.class, String.class);
+
+		// Convert List Map to a Map
+		for (Map<String, String> map : listMap) {
+
+			envDataMap.put("project", map.get("project"));
+			envDataMap.put("region", map.get("region"));
+			envDataMap.put("sprint", map.get("sprint"));
+			envDataMap.put("usNumber", map.get("usNumber"));
+
+		}
 	}
 
 }

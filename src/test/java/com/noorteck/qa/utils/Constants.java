@@ -2,6 +2,9 @@ package com.noorteck.qa.utils;
 
 import static io.restassured.RestAssured.given;
 
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.Statement;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Properties;
@@ -44,6 +47,15 @@ public class Constants {
 	public static RequestSpecification  request =  given();
 	public static Response response;
 	public static SoftAssert apiSoftAssert = new SoftAssert();
+	
+	
+	//DB class objects
+	public static  Statement stm;
+	public static  Connection con;
+	public static  ResultSet rs;
+	
+	
+	public static  Map<String, String> envDataMap = new HashMap<String, String>();
 	
 	
   }

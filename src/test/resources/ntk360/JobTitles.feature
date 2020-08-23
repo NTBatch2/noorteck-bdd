@@ -1,6 +1,6 @@
 Feature: Dashboard page Feature
 
-	@smoke
+ 
   Scenario Outline: Verifying the user acount name Fahim
     Given User is logged in on the dashboard page
      When User navigates to Job Titles
@@ -10,5 +10,5 @@ Feature: Dashboard page Feature
      Then System displays successfuly message "<SuccessMessage>"
 
     Examples: 
-      | JobTitle             | JobDescription     | Note      | SuccessMessage     |
+      | JobTitle            | JobDescription     | Note      | SuccessMessage     |
       | JENKINS03 Execution | database developer | Mid Level | Successfully Saved |
